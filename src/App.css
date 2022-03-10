@@ -42,7 +42,8 @@ body {
   /* 
    * card-layout. css 
    */
-  /* .card-row {
+  /* 
+  .card-row {
     display: grid;
     grid-template-columns: repeat(3, 32%);
     justify-content: space-between;

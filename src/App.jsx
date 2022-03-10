@@ -1,17 +1,24 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
+import './App.css';
 
 //Components
-import Home from './components/Home';
-import Wilders from './components/Wilders'
-import AddWildersForm from './components/AddWilderForm'
-import Header from './components/Header';
+import Wilders from './components/Wilders';
+// import Home from './components/Home';
+// import AddWildersForm from './components/AddWilderForm'
+// import Header from './components/Header';
 
 const App = () => {
   return (
     <>
-      <header ></header>
-      <Wilders></Wilders>
+      <header>
+        <h1 className='text-center'>Wilders Book</h1>
+      </header>
+      <div className='card-row'>
+        <Wilders></Wilders>
+      </div>
+
+      
       {/* <Header />
       <Switch>
         <Route path='/' exact>
