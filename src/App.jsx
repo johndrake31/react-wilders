@@ -14,9 +14,7 @@ const App = () => {
       <header>
         <h1 className='text-center'>Wilders Book</h1>
       </header>
-      <div className='card-row'>
         <Wilders></Wilders>
-      </div>
 
       
       {/* <Header />

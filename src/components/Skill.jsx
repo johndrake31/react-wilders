@@ -1,12 +1,23 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import classes from './Skill.module.css'
 
-const Skill = (props) => {
-    const {title, votes}=props
+const Skill = ({title, votes}) => {
+    // const {title, votes}=props
+    const {skills, skillsLi, sVotes} = classes
     return ( 
-        <span className="badge rounded-pill bg-dark">
-            {title} 
-            <span> {votes}</span>
-        </span>
+        <>
+        
+        <li className={skillsLi}>
+           <span className={skills}>{title}</span>  
+           <span className={sVotes}>{votes}</span> 
+        </li>
+        </>
      );
 }
 export default Skill;
+
+Skill.propTypes = {
+    title: PropTypes.string.isRequired,
+    votes: PropTypes.number.isRequired
+}

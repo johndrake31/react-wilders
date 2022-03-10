@@ -23,6 +23,7 @@ export const WilderContextProvider = (props)=>{
         ],
         "__v": 0
     }])
+    
     const contextValue = {
         wilders: wilders,
         setWilders: setWilders
