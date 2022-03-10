@@ -6,6 +6,18 @@ import styledComponents from 'styled-components';
 const StyledLi = styledComponents.li`
 margin: 1rem 1rem;
 color: black;
+  a{
+    text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: .5em;
+}
+a:hover{
+  color: white;
+  background-color: black;
+
+  }
 
 `;
 const StyledLiRed = styledComponents(StyledLi)`
