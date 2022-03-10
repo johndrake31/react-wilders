@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react';
-import WilderContext from '../context/WilderContext';
 import Card from './Card';
 import classes from './Wilders.module.css';
+import useWilders from '../hooks/useWilders';
 
 const Wilders = () => {
-  const { wilders, setWilders } = useContext(WilderContext);
+  const [ wilders, setWilders ] = useWilders();
   useEffect(()=>{
     fetch('http://localhost:4000/api/wilders')
     .then(res=>res.json())
