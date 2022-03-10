@@ -10,7 +10,9 @@ import Header from './components/Header';
 const App = () => {
   return (
     <>
-      <Header />
+      <header ></header>
+      <Wilders></Wilders>
+      {/* <Header />
       <Switch>
         <Route path='/' exact>
           <Home />
@@ -24,7 +26,7 @@ const App = () => {
         <Route path='/wilders-form' exact>
           <AddWildersForm />
         </Route>
-      </Switch>
+      </Switch> */}
     </>
   );
 };

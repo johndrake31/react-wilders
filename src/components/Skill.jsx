@@ -1,9 +1,12 @@
 import React from 'react';
 
 const Skill = (props) => {
-    const {skill}=props;
+    const {title, votes}=props
     return ( 
-        <span className="badge rounded-pill bg-dark">{skill}</span>
+        <span className="badge rounded-pill bg-dark">
+            {title} 
+            <span> {votes}</span>
+        </span>
      );
 }
 export default Skill;
