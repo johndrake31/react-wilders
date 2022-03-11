@@ -20,5 +20,5 @@ export default Skill;
 
 Skill.propTypes = {
   title: PropTypes.string.isRequired,
-  votes: PropTypes.number.isRequired,
+  votes: PropTypes.number,
 };

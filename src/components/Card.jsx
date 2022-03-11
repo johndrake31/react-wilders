@@ -20,7 +20,7 @@ const Card = ({ skills, city, name }) => {
       </p>
       <h4 className='card-title'>Wild Skills</h4>
       <ul className={classes['skills']}>
-        {skills &&
+        {skills.length > 0 &&
           skills.map(({ _id, votes, title }) => (
             <Skill key={_id} votes={votes} title={title}></Skill>
           ))}
@@ -36,8 +36,7 @@ Card.propTypes = {
     PropTypes.shape({
       title: PropTypes.string.isRequired,
       votes: PropTypes.number.isRequired,
-    }),
-  ),
+    })),
   city: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
 };
