@@ -1,0 +1,17 @@
+.flex-r {
+  display: flex;
+  align-items: center;
+}
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+.checkbox {
+  height: 25px;
+  width: 25px;
+  background-color: blanchedalmond;
+  cursor: pointer;
+}
+.checkbox:hover{
+    background-color: #9a8464;
+}

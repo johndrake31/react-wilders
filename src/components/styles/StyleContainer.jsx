@@ -11,7 +11,7 @@ color: #342f2f
 
 export const StyleContainerRose = styledComponents(StyleContainer)`
     background-color: #eb7c7c75;
-    border-radius: 12px 12px 0 0;
+    border-radius: 12px 12px 12px 12px;
 `;
 export const StyleContainerBlue = styledComponents(StyleContainer)`
     background-color: #7c9feb75;

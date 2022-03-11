@@ -6,6 +6,7 @@ import Header from './components/Header';
 //Components
 import Wilders from './components/Wilders';
 import Home from './components/Home';
+import AddWilderForm from './components/AddWilderForm';
 // import AddWildersForm from './components/AddWilderForm'
 
 const App = () => {
@@ -18,6 +19,9 @@ const App = () => {
         </Route>
         <Route path='/wilders' exact>
           <Wilders />
+        </Route>
+        <Route path='/wilders-form' exact>
+          <AddWilderForm />
         </Route>
       </Switch>
     </>

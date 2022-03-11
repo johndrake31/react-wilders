@@ -1,23 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classes from './Skill.module.css'
+import classes from './Skill.module.css';
 
-const Skill = ({title, votes}) => {
-    // const {title, votes}=props
-    const {skills, skillsLi, sVotes} = classes
-    return ( 
-        <>
-        
-        <li className={skillsLi}>
-           <span className={skills}>{title}</span>  
-           <span className={sVotes}>{votes}</span> 
-        </li>
-        </>
-     );
-}
+const Skill = ({ title, votes, onClick }) => {
+  // const {title, votes}=props
+  const { skills, skillsLi, sVotes } = classes;
+
+  const handleOnClick = () => {
+    onClick(title);
+  };
+  return (
+    <li onClick={handleOnClick} className={skillsLi}>
+      <span className={skills}>{title}</span>
+      {votes > 0 && <span className={sVotes}>{votes}</span>}
+    </li>
+  );
+};
 export default Skill;
 
 Skill.propTypes = {
-    title: PropTypes.string.isRequired,
-    votes: PropTypes.number.isRequired
-}
+  title: PropTypes.string.isRequired,
+  votes: PropTypes.number.isRequired,
+};

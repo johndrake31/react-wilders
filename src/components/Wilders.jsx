@@ -11,7 +11,7 @@ const Wilders = () => {
       .then((data) => {
         setWilders(data);
       });
-  }, [wilders, setWilders]);
+  }, []);
 
   return (
     <div className='container'>
